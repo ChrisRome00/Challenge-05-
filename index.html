@@ -38,7 +38,7 @@
             </div>
             <div class="modal-body text-center">
                 <!-- Add body to modal, Task name, Due Date, Description -->
-                <form class="modal-form-content">
+                <form name="modalInput" class="modal-form-content">
                     <div class="row">
                       <div class="col-6 my-2 py-3">
                         <label for="taskTitle" class="form-label">Task Title</label>
@@ -59,7 +59,8 @@
                   </form>
             </div>
             <div class="modal-footer" style="justify-content: space-around;">
-              <button type="button" class="btn btn-success" data-bs-dismiss="modal" >Add Task</button>
+              <div class="text-danger" id="errorMessage"></div>
+              <button type="button" class="col-12 btn btn-success addTask" >Add Task</button>
             </div>
           </div>
         </div>
